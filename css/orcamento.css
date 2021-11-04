@@ -1,0 +1,183 @@
+body{
+    background-color: #000;
+    overflow: auto;
+}
+
+/*----- Barra Navegação -----*/
+nav{
+    border-bottom: 1px solid rgb(54, 54, 54);
+}
+.btn-menu{
+    color: #fff;
+    font-weight: bold;
+}
+.divisor{
+    width: 1px;
+    height: 16px;
+    background: rgb(206, 206, 206);
+    margin: 4px 10px 0px 10px;
+}
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 300px;
+    top: 10px;
+}
+.nav-redes{
+    margin: 0px 20px 0px 20px;
+    font-size: 20px;
+}
+.navbar-brand, .nav-link{
+    color: #fff;
+}
+.navbar-brand:hover, .nav-link:hover{
+    color: rgb(94, 94, 94);
+}
+
+/*----- CONTAINER ORÇAMENTO E CONTATO -----*/
+
+#orcamento .container{
+    border: 1px solid rgb(49, 49, 49);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 60px;
+    border-radius: 30px;
+}
+#orcamento h1{
+    color: #fff;
+    text-align: center;
+}
+#orcamento p{
+    color: rgb(185, 185, 185);
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+/*--CONTATO--*/
+.contato{
+    border-left: 1px solid rgb(49, 49, 49);
+}
+.fa-whatsapp, .fa-envelope, #orcamento .fa-instagram, #orcamento .fa-facebook{
+    background-color: rgb(214, 57, 57);
+    color: #fff;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    padding-top: 5px;
+    text-align: center;
+}
+.dados_contato{
+    color: #fff;
+    padding: 5px;
+    font-size: 32px;
+    overflow-x: auto;
+}
+.dados_contato:hover{
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+}
+td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*--ORÇAMENTO--*/
+label{
+    font-size: 20px;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+button{
+   float: right;
+   margin-top: 15px;
+}
+
+/*--RODAPÉ--*/
+footer{
+    margin: 10px 0px 10px 0px;
+}
+footer a{
+    float: right;
+    margin: 0px 10px 0px 10px;
+}
+footer a:hover{
+    color: rgb(94, 94, 94);
+    text-decoration: none;
+}
+footer span, footer a{
+    color: #fff;
+}
+
+
+/*---------- MEDIA QUERIAS ----------*/
+
+
+/*PRIMEIRA TELA*/
+@media screen and (max-width: 575px){
+
+.dados_contato{
+    font-size: 20px;
+}
+.contato{
+    margin: 20px 0 0 0;
+    border-left: none;
+    border-top: 1px solid rgb(49, 49, 49);
+}
+
+/*FOOTER*/
+footer a{
+    float: none;
+    margin: 10px 10px 0px 10px;
+}
+}/*FIM PRIMEIRA TELA*/
+
+
+
+/*SEGUNDA TELA*/
+@media screen and (min-width: 576px) and (max-width: 767px){
+.contato{
+    margin: 20px 0 0 0;
+    border-left: none;
+    border-top: 1px solid rgb(49, 49, 49);
+}
+
+/*FOOTER*/
+footer a{
+    float: none;
+    margin: 10px 10px 0px 10px;
+}   
+}/*FIM SEGUNDA TELA*/
+
+
+
+/*TERCEIRA TELA*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+    /*BARRA DE NAVEGAÇÃO*/
+.redes-sociais{
+    right: 10px;
+}
+.contato{
+    margin: 20px 0 0 0;
+    border-left: none;
+    border-top: 1px solid rgb(49, 49, 49);
+}
+}/*FIM TERCEIRA TELA*/
+
+
+
+/*QUARTA TELA*/
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+    /*BARRA DE NAVEGAÇÃO*/
+.redes-sociais{
+    right: 15px;
+}
+.dados_contato{
+    font-size: 29px;
+}
+}/*FIM QUARTA TELA*/

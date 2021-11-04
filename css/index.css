@@ -1,0 +1,427 @@
+body{
+    background-color: #000;
+    height: 100%;
+    overflow-x: auto;
+}
+.separador{
+    border-top: 5px solid rgb(43, 43, 43);
+    border-bottom: 5px solid rgb(43, 43, 43);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/*----- Barra Navegação -----*/
+nav{
+    border-bottom: 1px solid rgb(54, 54, 54);
+}
+.btn-menu{
+    color: #fff;
+    font-weight: bold;
+}
+.divisor{
+    width: 1px;
+    height: 16px;
+    background: rgb(206, 206, 206);
+    margin: 4px 10px 0px 10px;
+}
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 300px;
+    top: 10px;
+}
+.nav-redes{
+    margin: 0px 20px 0px 20px;
+    font-size: 20px;
+}
+.navbar-brand, .nav-link{
+    color: #fff;
+}
+.navbar-brand:hover, .nav-link:hover{
+    color: rgb(94, 94, 94);
+}
+
+
+/*----- CAPA -----*/
+#capa{
+    display: table;
+    width: 100%;
+    height: 900px;
+    background:url(../img/capa/capa.jpg);
+    background-size: cover;
+}
+.botoes-capa{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgba(75, 75, 75, 0.288);
+    
+}
+#capa h2{
+    color: #fff;
+    font-size: 100px;
+    margin-bottom: 50px;
+}
+.botao-capa{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.247);
+    padding: 20px 60px;
+    border: 1px solid rgba(255, 255, 255, 0.233);
+    border-radius: 50px;
+    margin: 0px 10px 0px 10px;
+}
+.botao-capa:hover{
+    background-color: rgb(0, 0, 0, 0.5);
+    color: #fff;
+    text-decoration: none;
+}
+
+/*----- ULTIMO TRABALHO -----*/ 
+#ultimo-trab img{
+    width: 75%;
+    border-radius: 10px;
+}
+#ultimo-trab h1{
+    color: #fff;
+    font-size: 65px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#ultimo-trab p{
+    color: #fff;
+    font-size: 25px;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+#ultimo-trab a{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgb(209, 0, 0);
+    border-radius: 5px;
+    padding: 15px 50px;
+}
+
+/*----- DEPOIMENTOS -----*/
+#depoimentos{
+    height: 350px;
+}
+#depoimentos h1{
+    color: #fff;
+    margin-left: 10px;
+}
+#depoimentos p{
+    color: rgb(94, 94, 94);
+    text-align: center;
+    height: 200px;
+    overflow-y: auto;
+}
+#depoimentos img{
+    width: 170px;
+    margin-right: 5px;
+}
+.container-depoimentos{
+    display: flex;
+    flex-direction: column;
+}
+.carousel-control-prev{
+    font-size: 50px;
+    width: 60px;
+    height: 60px;
+    margin-left: 1000px;
+    margin-top: 190px;
+}
+.carousel-control-next{
+    font-size: 50px;
+    width: 60px;
+    height: 60px;
+    margin-top: 190px;
+}
+.icone-usuario{
+    background-color: #fff;
+    float: left;
+    margin-right: 15px;
+}
+
+    /*----- FOOTER -----*/
+footer{
+    position: relative;
+    bottom: 0;
+    margin: 10px 0px 10px 0px;
+}
+footer a{
+    float: right;
+    margin: 0px 10px 0px 10px;
+}
+footer a:hover{
+    color: rgb(94, 94, 94);
+    text-decoration: none;
+}
+footer span, footer a{
+    color: #fff;
+}
+
+
+/*---------- MEDIA QUERIAS ----------*/
+
+
+/*PRIMEIRA TELA*/
+@media screen and (max-width: 575px){
+
+.separador{
+    padding-bottom: 30px;
+}
+
+    /*CAPA*/
+
+#capa{
+    height: 700px;
+}
+#capa h2{
+    font-size: 60px;
+}
+.botao-capa{
+    font-size: 20px;
+    padding: 15px 40px;
+}
+
+    /*ULTIMOS TRABALHOS*/
+
+#ultimo-trab h1{
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#ultimo-trab p{
+    color: #fff;
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+#ultimo-trab img{
+    margin-bottom: 20px;
+}
+#ultimo-trab a{
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+    /*DEPOIMENTOS*/
+#depoimentos{
+    height: 600px;
+}
+#depoimentos img{
+    margin-bottom: 10px;
+}
+.container-depoimentos{
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    align-items: center;
+}
+.icone-usuario{
+    background-color: #fff;
+    float: none;
+    margin-right: 15px;
+}
+
+.carousel-control-prev{
+    font-size: 40px;
+    width: 60px;
+    height: 90px;
+    margin-left: 1px;
+    margin-top: 0px;
+}
+.carousel-control-next{
+    font-size: 40px;
+    width: 60px;
+    height: 90px;
+    margin-top: 0px;
+}
+
+
+    /*FOOTER*/
+footer a{
+    float: none;
+    margin: 10px 10px 0px 10px;
+}
+
+}/*Fim Primeira tela*/   
+
+
+
+/*SEGUNDA TELA*/
+@media screen and (min-width: 576px) and (max-width: 767px){
+
+.separador{
+    padding: 30px 0px 30px 0px;
+}
+    /*CAPA*/
+#capa{
+    height: 700px;
+}
+#capa h2{
+    font-size: 65px;
+}
+.botao-capa{
+    font-size: 22px;
+    padding: 15px 40px;
+}
+
+    /*ULTIMO TRABALHO*/
+#ultimo-trab h1{
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#ultimo-trab p{
+    color: #fff;
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+#ultimo-trab img{
+    margin-bottom: 20px;
+}
+#ultimo-trab a{
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+}
+
+    /*DEPOIMENTOS*/
+#depoimentos{
+    height: 550px;
+}
+#depoimentos img{
+    margin-bottom: 10px;
+}
+.container-depoimentos{
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    align-items: center;
+}
+.icone-usuario{
+    background-color: #fff;
+    float: none;
+    margin-right: 15px;
+}    
+.carousel-control-prev{
+    font-size: 40px;
+    width: 60px;
+    height: 120px;
+    margin-left: 1px;
+    margin-top: 40px;
+}
+.carousel-control-next{
+    font-size: 40px;
+    width: 60px;
+    height: 120px;
+    margin-top: 40px;
+}
+
+    /*FOOTER*/
+footer a{
+    float: none;
+    margin: 10px 10px 0px 10px;
+}   
+
+}/*FIM SEGUNDA TELA*/
+
+
+/*TERCEIRA TELA*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+    /*BARRA DE NAVEGAÇÃO*/
+.redes-sociais{
+    right: 10px;
+}
+
+    /*CAPA*/
+#capa h2{
+    font-size: 85px;
+}
+.botao-capa{
+    font-size: 22px;
+    padding: 15px 45px;
+}
+
+    /*ULTIMO TRABALHO*/
+#ultimo-trab h1{
+    font-size: 50px;
+}
+#ultimo-trab p{
+    font-size: 20px;
+}
+#ultimo-trab img{
+    margin: 20px 0px 15px 0px;
+}
+#ultimo-trab a{
+    display: block;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+    /*DEPOIMENTOS*/
+#depoimentos{
+    height: 380px;
+}
+#depoimentos p{
+    height: 120px;
+    margin-left: 5px;
+}
+.carousel-control-prev{
+    font-size: 45px;
+    height: 80px;
+    margin-left: 550px;
+}
+.carousel-control-next{
+    font-size: 45px;
+    height: 80px;
+    margin-top: 190px;
+}
+
+}/*FIM TERCEIRA TELA*/
+
+
+/*QUARTA  TELA*/
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+    /*BARRA DE NAVEGAÇÃO*/
+.redes-sociais{
+    right: 15px;
+}
+
+    /*ULTIMOS TRABALHOS*/
+#ultimo-trab img{
+    margin-top: 35px;
+}
+
+    /*DEPOIMENTOS*/
+#depoimentos{
+    height: 350px;
+}
+#depoimentos p{
+    margin-left: 5px;
+    height: 120px;
+}
+.carousel-control-prev{
+    font-size: 45px;
+    height: 60px;
+    margin-left: 780px;
+}
+.carousel-control-next{
+    font-size: 45px;
+    height: 60px;
+    margin-top: 190px;
+}
+
+}/*FIM QUARTA TELA*/
